@@ -1,0 +1,68 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model RoomSuite {
+  id          Int      @id @default(autoincrement())
+  name        String
+  price       String
+  guests      String
+  sqm         String
+  image       String
+  description String
+}
+
+model ResortBooking {
+  id          Int      @id @default(autoincrement())
+  suiteName   String
+  guestName   String
+  checkIn     String
+  checkOut    String
+  createdAt   DateTime @default(now())
+}
+
+model Restaurant {
+  id          Int      @id @default(autoincrement())
+  name        String
+  cuisine     String
+  image       String
+  description String
+}
+
+model Activity {
+  id          Int      @id @default(autoincrement())
+  name        String
+  category    String
+  price       String
+  image       String
+}
+
+model SpaService {
+  id          Int      @id @default(autoincrement())
+  name        String
+  duration    String
+  price       String
+  description String
+}
+
+model GuestReview {
+  id        Int      @id @default(autoincrement())
+  guestName String
+  rating    Float
+  comment   String
+  createdAt DateTime @default(now())
+}
+
+model BlogPost {
+  id        Int      @id @default(autoincrement())
+  slug      String   @unique
+  title     String
+  author    String
+  content   String
+  createdAt DateTime @default(now())
+}
