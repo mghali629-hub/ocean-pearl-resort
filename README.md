@@ -1,11 +1,11 @@
-﻿# 🏝️ Ocean Pearl Resort — Eco-Luxury Island Resort Platform
+﻿# 🏖️ Ocean Pearl Resort — Luxury Coastal Resort & Villa Reservation System
 
-Five-star private island resort web application featuring overwater villa bookings, marine safari excursions, spa sanctuary reservations, and guest portal.
+Luxury beachfront resort portal for suite and private villa bookings, spa packages, ocean dining, and guest concierge services.
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript & React 18
-- **Styling**: TailwindCSS
+- **Styling**: TailwindCSS & Lucide Icons
 - **Database**: Prisma ORM & SQLite
 
 ## 🚀 Quick Start
@@ -14,6 +14,7 @@ npm install
 npx prisma db push
 npm run db:seed
 npm run dev
-``n
+`
+
 ## 📄 License
 MIT License.
